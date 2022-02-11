@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -92,7 +96,6 @@ body {
 
 .contact-info ul li {
   position: relative;
-  list-style: none;
   margin: 10px 0;
 }
 
@@ -100,7 +103,7 @@ body {
   display: inline-block;
   color: #03a9f4;
   width: 30px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contact-info ul li .text {
@@ -132,16 +135,22 @@ body {
   font-weight: 400;
 }
 
-.contact-info.languages .percent {
+.contact-info.languages li,
+.contact-info.skills li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.percent {
   position: relative;
-  display: block;
-  width: 100%;
+  width: 70%;
   height: 6px;
   background-color: #081921;
   margin-top: 5px;
 }
 
-.contact-info.languages .percent div {
+.percent div {
   position: absolute;
   left: 0;
   top: 0;
@@ -149,8 +158,72 @@ body {
   background-color: #03a9f4;
 }
 
+/* Right Side */
 .container .right-side {
   position: relative;
   background-color: #fff;
   padding: 40px;
+}
+
+.about {
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.about:first-child {
+  padding-top: 0;
+}
+
+.about:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.about .title {
+  color: #003147;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about.education .year-and-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.about.education .year-and-course .course-studied-at {
+  font-weight: 800;
+}
+
+.about.education .year-and-course .year {
+  font-weight: 400;
+}
+
+.box {
+  display: flex;
+  margin: 20px 0;
+}
+
+.box .year {
+  min-width: 75px;
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.box .project-title {
+  color: #2a7da2;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.about.achievements li {
+  list-style: square;
+  margin: 10px 0 10px 10px;
 }
