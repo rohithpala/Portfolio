@@ -219,9 +219,9 @@ li {
 }
 
 .box .project-title {
-  color: #2a7da2;
+  color: #118cc5;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .about.achievements li {
@@ -233,6 +233,11 @@ li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 10px;
+}
+
+.about.interests ul li {
+  display: flex;
+  align-items: center;
 }
 
 .about.interests ul li .icon {
