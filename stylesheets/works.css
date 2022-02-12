@@ -1,0 +1,40 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.works a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ff9d;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s transform;
+}
+
+.work:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 350px;
+  height: 180px;
+}
+
+.more {
+  
+}
