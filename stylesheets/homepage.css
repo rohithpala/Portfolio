@@ -4,41 +4,99 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
-  position: relative;
 }
 
-.left {
-  left: 0;
-}
-
-.right {
-  right: 0;
-}
-
-/* .center {
-  top: 0;
-} */
-
-.img-container {
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
-  width: 50%;
-  float: left;
-  border-right: 2px solid #f00;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.img-container img {
-  width: 50%;
-  height: 50%;
+.logo {
+  width: 300px;
 }
 
-.text {
-  border-left: 2px solid #0f0;
-  float: right;
+.menu {
+  list-style: none;
+}
+
+.menu-item {
+  display: inline;
+}
+
+.menu-item a {
+  font-family: "Times New Roman", "Arial";
+  margin: 3px;
+  padding: 10px 20px;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.menu-item a:hover {
+  background-color: #23cdaf;
+  color: #fff;
+  box-shadow: 5px 10px 38px rgba(24, 139, 95, 0.2);
+}
+
+.my-image {
+  height: 500px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.wave {
+  animation: waving-hand 2.5s infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  font-size: 25px;
+}
+
+@keyframes waving-hand {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.resume-link {
+  color: #fff;
+  background-color: #23cdaf;
+  margin-left: 5px;
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s transform;
+}
+
+.resume-link:active {
+  transform: scale(0.9);
 }
