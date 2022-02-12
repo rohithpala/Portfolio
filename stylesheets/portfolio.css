@@ -1,0 +1,45 @@
+.my-image {
+  height: 500px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.wave {
+  animation: waving-hand 2.5s infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  font-size: 25px;
+}
+
+@keyframes waving-hand {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.resume-link {
+  color: #fff;
+  background-color: #23cdaf;
+  margin-left: 5px;
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s transform;
+}
+
+.resume-link:active {
+  transform: scale(0.9);
+}

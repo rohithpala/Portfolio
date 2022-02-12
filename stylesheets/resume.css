@@ -25,7 +25,7 @@ li {
   max-width: 1100px;
   min-height: 1100px;
   background-color: #fff;
-  margin: 50px;
+  margin: 70px;
   display: grid;
   grid-template-columns: 2fr 3fr;
   box-shadow: 0 35px 50px rgba(0, 0, 0, 0.2);
@@ -257,7 +257,6 @@ li {
 /* Making the page Responsive */
 @media (max-width: 1000px) {
   .container {
-    margin: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -283,8 +282,5 @@ li {
 @media (max-width: 420px) {
   body {
     justify-content: unset;
-  }
-  .container {
-    margin: 0;
   }
 }
