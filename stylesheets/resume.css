@@ -22,8 +22,8 @@ li {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
+  max-width: 1100px;
+  min-height: 1100px;
   background-color: #fff;
   margin: 50px;
   display: grid;
@@ -210,8 +210,8 @@ li {
   margin: 20px 0;
 }
 
-.box .year {
-  min-width: 75px;
+.box .year-done-in {
+  min-width: 150px;
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
@@ -249,7 +249,7 @@ li {
 }
 
 /* Making the page Responsive */
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .container {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
@@ -265,8 +265,8 @@ li {
     flex-direction: column;
   }
 
-  .about .box .year {
-    margin-bottom: 5px;
+  .about .box .year-done-in {
+    margin-bottom: 10px;
   }
 
   .about.interests ul {
