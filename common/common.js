@@ -6,9 +6,8 @@ document.querySelector(".common").innerHTML = `
    <span></span>
 
    <ul class="menu">
-      <li class="menu-item"><a href="portfolio.html">Home</a></li>
+      <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
       <li class="menu-item"><a href="works.html">My Works</a></li>
       <li class="menu-item"><a href="resume.html">Resume</a></li>
-      <li class="menu-item"><a href="contact.html">Contact Me</a></li>
    </ul>
 `;
