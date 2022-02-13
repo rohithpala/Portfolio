@@ -50,7 +50,79 @@ nav {
 }
 
 .menu-item a:hover {
-  background-color: #23cdaf;
   color: #fff;
+  background-color: #23cdaf;
   box-shadow: 5px 10px 38px rgba(24, 139, 95, 0.2);
+}
+
+/* Dots Menu */
+/* .small-menu {
+  display: none;
+} */
+
+.dots {
+  position: relative;
+  display: none;
+  height: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+  position: absolute;
+  font-size: 25px;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.menu1 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.menu1 ul li {
+  font-family: "Times New Roman", "Arial";
+  display: block;
+  background-color: #dfdfdf;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.menu1 ul li:hover {
+  background-color: #23cdaf;
+}
+
+.menu1 ul li:hover a {
+  color: #fff;
+}
+
+.menu1 ul li a {
+  color: #000100;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 200px;
+  }
+  .menu-item a {
+    font-family: "Poppins";
+  }
+  .menu {
+    display: none;
+  }
+  .dots {
+    display: inherit;
+  }
+  .menu1 {
+    display: inherit;
+  }
 }
