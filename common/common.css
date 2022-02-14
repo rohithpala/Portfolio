@@ -58,12 +58,12 @@ body {
 /* Hamburger Menu */
 .icon-container {
   display: none;
+  position: relative;
 }
 
 .menu-icon {
-  position: fixed;
+  position: absolute;
   font-size: 25px;
-  right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
