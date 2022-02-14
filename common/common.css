@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-nav {
+.common {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -55,74 +55,76 @@ nav {
   box-shadow: 5px 10px 38px rgba(24, 139, 95, 0.2);
 }
 
-/* Dots Menu */
-/* .small-menu {
+/* Hamburger Menu */
+.icon-container {
   display: none;
-} */
-
-.dots {
-  position: relative;
-  display: none;
-  height: 50px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-icon {
-  position: absolute;
+  position: fixed;
   font-size: 25px;
-  top: 50%;
-  right: 25px;
+  right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
 
 .menu1 {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 54px;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease-out;
+  z-index: 1;
 }
 
-.menu1 ul li {
+.menu1 a {
+  text-decoration: none;
+}
+
+.menu1 li {
   font-family: "Times New Roman", "Arial";
   display: block;
+  color: #000100;
   background-color: #dfdfdf;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
+  font-weight: 600;
   font-size: 0.9em;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   cursor: pointer;
 }
 
-.menu1 ul li:hover {
+.menu1 li:hover {
+  color: #fff;
   background-color: #23cdaf;
 }
 
-.menu1 ul li:hover a {
-  color: #fff;
-}
-
-.menu1 ul li a {
-  color: #000100;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
 @media (max-width: 800px) {
-  .logo {
-    width: 200px;
-  }
-  .menu-item a {
-    font-family: "Poppins";
-  }
   .menu {
     display: none;
   }
-  .dots {
+  .icon-container {
     display: inherit;
   }
-  .menu1 {
-    display: inherit;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    width: 180px;
   }
 }

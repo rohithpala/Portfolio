@@ -279,8 +279,12 @@ li {
   }
 }
 
-@media (max-width: 420px) {
-  body {
-    justify-content: unset;
+@media (max-width: 360px) {
+  .container {
+    padding: 0;
+  }
+
+  .container .left-side {
+    padding: 10px;
   }
 }

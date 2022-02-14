@@ -10,24 +10,22 @@ document.querySelector(".common").innerHTML = `
       <li class="menu-item"><a href="works.html">My Works</a></li>
       <li class="menu-item"><a href="resume.html">Resume</a></li>
    </ul>
-`;
 
-document.querySelector(".small-menu").innerHTML = `
-   <div class="dots">
+   <div class="icon-container">
       <i class="fa-solid fa-ellipsis menu-icon" onclick="showMenu()"></i>
    </div>
 
    <div class="menu1">
       <ul>
-         <li><a href="#">Portfolio</a></li>
-         <li><a href="#">My Works</a></li>
-         <li><a href="#">Resume</a></li>
+         <a href="portfolio.html"><li>Portfolio</li></a>
+         <a href="works.html"><li>My Works</li></a>
+         <a href="resume.html"><li>Resume</li></a>
       </ul>
    </div>
 `;
 
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".menu1");
 function showMenu() {
    if (menu.style.maxHeight) menu.style.maxHeight = null;
-   else menu.style.maxHeight = menu.scrollHeight + "px";
+   else menu.style.maxHeight = "155px";
 }
