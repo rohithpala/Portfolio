@@ -12,7 +12,7 @@ document.querySelector(".common").innerHTML = `
    </ul>
 
    <div class="icon-container">
-      <i class="fa-solid fa-ellipsis menu-icon" onclick="showMenu()"></i>
+      <div class="hamburger"></div>
    </div>
 
    <div class="menu1">
@@ -25,7 +25,25 @@ document.querySelector(".common").innerHTML = `
 `;
 
 const menu = document.querySelector(".menu1");
-function showMenu() {
-   if (menu.style.maxHeight) menu.style.maxHeight = null;
-   else menu.style.maxHeight = "155px";
-}
+const hamburger = document.querySelector(".hamburger");
+const docStyle = document.documentElement.style;
+let cross = false;
+document.querySelector(".icon-container").addEventListener("click", function () {
+   if (cross) {
+      menu.style.maxHeight = null;
+      hamburger.classList.remove("open");
+      docStyle.setProperty("--before-angle", 0 + "deg");
+      docStyle.setProperty("--after-angle", 0 + "deg");
+      docStyle.setProperty("--before-position", -8 + "px");
+      docStyle.setProperty("--after-position", 8 + "px");
+      cross = false;
+   } else {
+      menu.style.maxHeight = "155px";
+      hamburger.classList.add("open");
+      docStyle.setProperty("--before-angle", 45 + "deg");
+      docStyle.setProperty("--after-angle", -45 + "deg");
+      docStyle.setProperty("--before-position", 0 + "px");
+      docStyle.setProperty("--after-position", 0 + "px");
+      cross = true;
+   }
+});
