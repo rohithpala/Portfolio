@@ -20,14 +20,30 @@ main {
 }
 
 @keyframes waving-hand {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .resume-link {
@@ -44,13 +60,19 @@ main {
   transform: scale(0.9);
 }
 
+@media (max-width: 800px) {
+  .my-image {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 760px) {
   main {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 90px;
+    margin-top: 70px;
   }
   .text {
-    margin-top: 20px;
+    margin: 20px 0;
   }
 }
 
