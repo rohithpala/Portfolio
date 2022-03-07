@@ -293,4 +293,9 @@ li {
   .container {
     width: 100%;
   }
+
+  .container .left-side,
+  .container .right-side {
+    padding: 20px;
+  }
 }
