@@ -9,7 +9,6 @@
    <link rel="shortcut icon" href="../images/works-tab-image.png" type="image/x-icon">
 
    <link rel="stylesheet" href="../stylesheets/works.css">
-   <script src="../common/common.js" defer></script>
    <link rel="stylesheet" href="../common/common.css">
 
    <script src="https://kit.fontawesome.com/23538a4f23.js" crossorigin="anonymous"></script>
@@ -82,6 +81,14 @@
          More Project Codes Here <i class="fa-solid fa-angle-right"></i>
       </a>
    </main>
+
+   <script src="../common/common.js"></script>
+   <script>
+      if (hamburger.classList.contains("open")) {
+         hamburger.classList.remove("open");
+         hamburger.click();
+      }
+   </script>
 </body>
 
 </html>

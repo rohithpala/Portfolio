@@ -1,6 +1,6 @@
 document.querySelector(".common").innerHTML = `
    <div>
-      <a href="portfolio.html"><img class="logo" src="../images/portfolio.png" alt="Logo"></a>
+      <a href="homepage.html"><img class="logo" src="../images/portfolio.png" alt="Logo"></a>
    </div>
 
    <span></span>
