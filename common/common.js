@@ -9,7 +9,6 @@ document.querySelector(".common").innerHTML = `
       <li class="menu-item"><a href="homepage.html">Home</a></li>
       <li class="menu-item"><a href="works.html">My Works</a></li>
       <li class="menu-item"><a href="resume.html">Resume</a></li>
-      <li class="menu-item"><a href="contact.html">Contact Me</a></li>
    </ul>
 
    <div class="icon-container">
@@ -21,7 +20,6 @@ document.querySelector(".common").innerHTML = `
          <a href="homepage.html"><li>Home</li></a>
          <a href="works.html"><li>My Works</li></a>
          <a href="resume.html"><li>Resume</li></a>
-         <a href="contact.html"><li>Contact Me</li></a>
       </ul>
    </div>
 `;
