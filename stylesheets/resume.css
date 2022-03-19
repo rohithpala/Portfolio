@@ -70,7 +70,12 @@ li {
 }
 
 .contact-info {
-  padding-top: 40px;
+  padding: 27px 0;
+  border-bottom :1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info:last-child {
+  border-bottom: 0;
 }
 
 .contact-info .title {
@@ -99,6 +104,7 @@ li {
 }
 
 .contact-info ul li .text {
+  width: max-content;
   color: #fff;
   font-weight: 300;
 }
@@ -132,13 +138,29 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
-.percentage {
+.skill-category {
   color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 200, 0.1);
 }
 
-.percentage-bar {
+.skill-category:first-child {
+  padding-top: 0;
+}
+
+.skill-category:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.skill {
+  text-decoration: underline;
+}
+
+.percentage-container {
   position: relative;
   width: 65%;
   height: 6px;
@@ -146,7 +168,14 @@ li {
   margin-top: 5px;
 }
 
-.percentage-bar div {
+.percentage {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  color: #fff;
+}
+
+.percentage-container div {
   position: absolute;
   left: 0;
   top: 0;
