@@ -256,7 +256,7 @@ li {
 .about.interests ul,
 .about.strengths ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr;
   margin: 10px;
 }
 
@@ -264,6 +264,8 @@ li {
 .about.strengths ul li {
   display: flex;
   align-items: center;
+  margin: 5px;
+  margin-left: 0;
 }
 
 .about.interests ul li .icon,
