@@ -156,10 +156,6 @@ li {
   padding-bottom: 0;
 }
 
-.skill {
-  text-decoration: underline;
-}
-
 .percentage-container {
   position: relative;
   width: 65%;
@@ -207,7 +203,7 @@ li {
 .about .title {
   color: #003147;
   margin-bottom: 10px;
-  font-weight: bolder;
+  font-weight: 1000;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -235,7 +231,16 @@ li {
   margin: 20px 0;
 }
 
-.box .year-done-in {
+.box .project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.box .internship-container {
   min-width: 150px;
   text-transform: uppercase;
   color: #848c90;
@@ -248,27 +253,31 @@ li {
   font-size: 18px;
 }
 
-.about.achievements li {
+.about.certifications li {
   list-style: square;
   margin: 10px 0 10px 10px;
 }
 
-.about.interests ul,
-.about.strengths ul {
+.about.hobbies ul {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   margin: 10px;
 }
 
-.about.interests ul li,
+.about.strengths ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+}
+
+.about.hobbies ul li,
 .about.strengths ul li {
   display: flex;
   align-items: center;
-  margin: 5px;
-  margin-left: 0;
+  margin-bottom: 10px;
 }
 
-.about.interests ul li .icon,
+.about.hobbies ul li .icon,
 .about.strengths ul li .icon {
   color: #03a9f4;
   font-size: 18px;
@@ -289,22 +298,25 @@ li {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .about.interests ul,
+  .about.hobbies ul,
   .about.strengths ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .about .box {
+  .about .box,
+  .box .project-container {
     flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
   }
 
-  .about .box .year-done-in {
+  .about .box .internship-container {
     margin-bottom: 10px;
   }
 
-  .about.interests ul,
+  .about.hobbies ul,
   .about.strengths ul {
     grid-template-columns: repeat(1, 1fr);
   }
