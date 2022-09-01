@@ -2,18 +2,18 @@
   height: 500px;
 }
 
-main {
+main.homepage-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
   justify-items: center;
   align-items: center;
+  width: 100%;
   text-align: center;
+  min-height: 100vh;
 }
 
 .wave {
   animation: waving-hand 2.5s infinite;
-  animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
   font-size: 25px;
@@ -67,7 +67,7 @@ main {
 }
 
 @media (max-width: 760px) {
-  main {
+  main.homepage-main {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 70px;
   }
@@ -83,7 +83,7 @@ main {
 }
 
 @media (max-width: 400px) {
-  main {
+  main.homepage-main {
     margin-top: 0;
   }
   .my-image {

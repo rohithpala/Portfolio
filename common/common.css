@@ -11,20 +11,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .common {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #fff;
   padding: 10px;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.05);
+  z-index: 1;
 }
 
 .logo {
