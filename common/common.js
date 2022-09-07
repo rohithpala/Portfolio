@@ -27,8 +27,11 @@ document.querySelector(".common").innerHTML = `
 const menu = document.querySelector(".menu1");
 const hamburger = document.querySelector(".hamburger");
 const docStyle = document.documentElement.style;
+const iconConatiner = document.querySelector(".icon-container");
+
 let cross = false;
-document.querySelector(".icon-container").addEventListener("click", function () {
+
+iconConatiner.addEventListener("click", function () {
    if (cross) {
       menu.style.maxHeight = null;
       hamburger.classList.remove("open");
@@ -46,4 +49,10 @@ document.querySelector(".icon-container").addEventListener("click", function () 
       docStyle.setProperty("--after-position", 0 + "px");
       cross = true;
    }
+});
+
+document.addEventListener("scroll", () => {
+   if (!cross) return;
+   
+   iconConatiner.click();
 });
