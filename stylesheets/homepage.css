@@ -10,6 +10,8 @@ main.homepage-main {
   width: 100%;
   text-align: center;
   min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .wave {
@@ -47,8 +49,8 @@ main.homepage-main {
 }
 
 .resume-link {
-  color: #fff;
-  background-color: #23cdaf;
+  color: var(--text-color);
+  background-color: var(--link-bg);
   margin-left: 5px;
   padding: 7px 20px;
   border: none;

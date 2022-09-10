@@ -1,0 +1,9 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --link-bg: #23cdaf;
+  --border-color: #000;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-color: var(--border-color);
+}

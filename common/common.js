@@ -1,4 +1,5 @@
-document.querySelector(".common").innerHTML = `
+const navbar = document.querySelector(".common");
+navbar.innerHTML = `
    <div>
       <a href="homepage.html"><img class="logo" src="../images/portfolio.png" alt="Logo"></a>
    </div>
@@ -9,6 +10,10 @@ document.querySelector(".common").innerHTML = `
       <li class="menu-item"><a href="homepage.html">Home</a></li>
       <li class="menu-item"><a href="works.html">My Works</a></li>
       <li class="menu-item"><a href="resume.html">Resume</a></li>
+      
+      <button class="dark-mode-button light">
+         <i class="fa-solid fa-sun icon"></i>
+      </button>
    </ul>
 
    <div class="icon-container">
@@ -28,6 +33,27 @@ const menu = document.querySelector(".menu1");
 const hamburger = document.querySelector(".hamburger");
 const docStyle = document.documentElement.style;
 const iconConatiner = document.querySelector(".icon-container");
+const darkModeButton = document.querySelector(".dark-mode-button");
+
+darkModeButton.addEventListener("click", () => {
+   if (darkModeButton.classList.contains("light")) {
+      docStyle.setProperty("--bg-color", "#333");
+      docStyle.setProperty("--text-color", "#fff");
+      docStyle.setProperty("--border-color", "#fff");
+      darkModeButton.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+      navbar.style.boxShadow = "5px 10px 30px rgba(255, 255, 255, 0.1)";
+   } else {
+      docStyle.setProperty("--bg-color", "#fff");
+      docStyle.setProperty("--text-color", "#000");
+      docStyle.setProperty("--border-color", "#000");
+      darkModeButton.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+      navbar.style.boxShadow = "5px 10px 30px rgba(0, 0, 0, 0.05)";
+   }
+
+   darkModeButton.classList.toggle("light");
+   darkModeButton.classList.toggle("dark");
+
+});
 
 let cross = false;
 
@@ -53,6 +79,6 @@ iconConatiner.addEventListener("click", function () {
 
 document.addEventListener("scroll", () => {
    if (!cross) return;
-   
+
    iconConatiner.click();
 });

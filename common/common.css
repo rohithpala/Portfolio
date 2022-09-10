@@ -21,7 +21,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 10px;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.05);
   z-index: 1;
@@ -29,9 +29,15 @@ body {
 
 .logo {
   width: 300px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -47,13 +53,22 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: var(--text-color);
 }
 
 .menu-item a:hover {
   color: #fff;
-  background-color: #23cdaf;
+  background-color: var(--link-bg);
   box-shadow: 5px 10px 38px rgba(24, 139, 95, 0.2);
+}
+
+.dark-mode-button {
+  color: var(--text-color);
+  background-color: transparent;
+  margin-left: 10px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 /* Hamburger Menu */
@@ -78,7 +93,7 @@ body {
   position: absolute;
   font-size: 25px;
   cursor: pointer;
-  background-color: #000;
+  background-color: var(--text-color);
   width: 30px;
   height: 4px;
   transition: all 0.5s ease-in-out;
@@ -88,7 +103,7 @@ body {
 .hamburger::after {
   content: "";
   position: absolute;
-  background-color: #000;
+  background-color: var(--text-color);
   width: 30px;
   height: 4px;
   transition: all 0.5s ease-in-out;
@@ -138,7 +153,7 @@ body {
 
 .menu1 li:hover {
   color: #fff;
-  background-color: #23cdaf;
+  background-color: var(--link-bg);
 }
 
 @media (max-width: 800px) {
