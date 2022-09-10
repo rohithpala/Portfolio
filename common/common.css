@@ -122,22 +122,20 @@ body {
   background-color: transparent;
 }
 
-.menu1 {
+.small-menu {
   width: 100%;
   position: fixed;
-  top: 53px;
-  right: 0;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease-out;
   z-index: 1;
 }
 
-.menu1 a {
+.small-menu a {
   text-decoration: none;
 }
 
-.menu1 li {
+.small-menu li {
   font-family: "Times New Roman", "Arial";
   display: block;
   color: #000100;
@@ -151,7 +149,7 @@ body {
   cursor: pointer;
 }
 
-.menu1 li:hover {
+.small-menu li:hover {
   color: #fff;
   background-color: var(--link-bg);
 }
@@ -165,7 +163,7 @@ body {
     display: flex;
   }
 
-  .menu1 {
+  .small-menu {
     top: 66.59px;
   }
 }
@@ -192,7 +190,7 @@ body {
     width: 25px;
   }
 
-  .menu1 {
+  .small-menu {
     top: 50.51px;
   }
 }
