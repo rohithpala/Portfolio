@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.common {
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;

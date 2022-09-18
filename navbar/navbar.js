@@ -1,4 +1,4 @@
-const navbar = document.querySelector(".common");
+const navbar = document.querySelector(".navbar");
 navbar.innerHTML = `
    <div>
       <a href="homepage.html" title="Homepage"><img class="logo" src="../images/portfolio.png" alt="Logo"></a>
