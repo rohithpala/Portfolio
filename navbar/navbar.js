@@ -1,13 +1,13 @@
 const navbar = document.querySelector(".navbar");
 navbar.innerHTML = `
    <div>
-      <a href="./index.html" title="Homepage"><img class="logo" src="./images/portfolio.png" alt="Logo"></a>
+      <a href="/" title="Homepage"><img class="logo" src="./images/portfolio.png" alt="Logo"></a>
    </div>
 
    <span></span>
 
    <ul class="menu">
-      <li class="menu-item" title="Homepage"><a href="./index.html">Home</a></li>
+      <li class="menu-item" title="Homepage"><a href="/">Home</a></li>
       <li class="menu-item" title="My Works"><a href="./works.html">My Works</a></li>
       <li class="menu-item" title="My Resume"><a href="./resume.html">Resume</a></li>
       
@@ -22,7 +22,7 @@ navbar.innerHTML = `
 
    <div class="small-menu">
       <ul>
-         <a href="./index.html"><li>Home</li></a>
+         <a href="/"><li>Home</li></a>
          <a href="./works.html"><li>My Works</li></a>
          <a href="./resume.html"><li>Resume</li></a>
       </ul>
