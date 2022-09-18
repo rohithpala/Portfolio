@@ -1,7 +1,7 @@
 const navbar = document.querySelector(".navbar");
 navbar.innerHTML = `
    <div>
-      <a href="/" title="Homepage"><img class="logo" src="./images/portfolio.png" alt="Logo"></a>
+      <a href="/" class="logo" title="Homepage">PORTFOLIO</a>
    </div>
 
    <span></span>
@@ -76,6 +76,19 @@ iconConatiner.addEventListener("click", function () {
       cross = true;
    }
 });
+
+// Toggling Active Link
+// const menuItems = document.querySelectorAll(".menu-item");
+// function toggleActiveLink() {
+//    menuItems.forEach(item => {
+//       item.classList.remove("active");
+//    });
+//    this.classList.add("active");
+// }
+
+// menuItems.forEach(item => {
+//    item.addEventListener("click", toggleActiveLink);
+// });
 
 document.addEventListener("scroll", () => {
    if (!cross) return;
